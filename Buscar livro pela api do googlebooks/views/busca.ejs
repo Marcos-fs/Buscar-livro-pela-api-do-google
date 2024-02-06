@@ -1,0 +1,12 @@
+<%- include('partials/head') %>
+
+<div class="busca">
+    <h2>Busque o livro:</h2>
+    <form class="center" action="/busca" method="GET">
+        <input type="text" name="busca"> <button>Buscar</button>
+        <br><br>
+        <input type="radio" name="tipo" value="isbn:"> ISBN &nbsp; | <input type="radio" name="tipo" value="intitle:"> Título
+    </form>
+</div>
+
+<%- include('partials/footer') %>

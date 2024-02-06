@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+    margin: 20px;
+    text-align: center;
+}
+
+h1{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.menu{
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+.item-menu{
+    margin-right: 20px;
+}
+
+.adicionar{
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.botoes{
+    float: right;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.titulo{
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+.lista{
+    width: 300px;
+    margin: 50px auto 40px auto;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.busca{
+    margin: 20px;
+}
+
+.center{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.livro{
+    border: 2px solid black;
+    margin: 0 auto 20px auto;
+    width: 680px;
+    height: 205px;
+    text-align: left;
+}
+
+.livro img{
+    float: left;
+    margin: 10px 20px 10px 10px;
+}
+
+#voltar{
+    text-align: center;
+    margin-top: 50px;
+}

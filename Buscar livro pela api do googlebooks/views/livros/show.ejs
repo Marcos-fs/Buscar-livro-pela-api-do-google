@@ -1,0 +1,39 @@
+<%- include('../partials/head') %>
+
+<% if(livro) { %>
+    <h2>Detalhes do Livro</h2>
+
+    <%  let autores = ""
+        if (livro.authors){
+            for(let i = 0; i < livro.authors.length; i++){
+                autores += livro.authors[i]
+                if (i < livro.authors.length - 1){
+                    autores += ', '
+                } else {
+                    autores += "."
+                }
+            }
+        }
+    %>
+        <div class="livro">
+            <img src="<%= livro.thumbnail ? livro.thumbnail : '../../imgs/transparent.png' %>">
+            <p>Título: <%= livro.title %></p>
+            <p>Autores: <%= autores %></p>
+            <div>
+                <% if(livro.industryIdentifiers) {
+                    for (isbn of livro.industryIdentifiers) { %>
+                        <p><%= isbn.type %>: <%= isbn.identifier %>.</p>
+                    <% }
+                 } %>
+            </div>
+            <form id="f" action="/livros/<%= livro._id %>?_method=DELETE" method="post">
+                <button class="botoes" type="button" onClick="confirm('Tem certeza que deseja apagar o livro <%= livro.title %>?') ? document.getElementById('f').submit() : false">Remover da minha lista</button>
+            </form>
+        </div>
+
+
+<% } else { %>
+    <h2>Nenhum livro encontrado</h2>
+<% } %>
+<a href="/livros"><p id="voltar">Voltar</p></a>
+<%- include('../partials/footer') %>
