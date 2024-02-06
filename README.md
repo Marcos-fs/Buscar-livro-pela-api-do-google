@@ -35,3 +35,6 @@ Banco de Dados: Será utilizado um banco de dados (como MongoDB, MySQL, PostgreS
 API do Google Books:
 
 Utilização da API do Google Books para buscar e obter informações sobre livros.
+
+![image](https://github.com/Marcos-fs/Buscar-livro-pela-api-do-google/assets/159043587/3fdd835a-6ecf-408b-be93-0964bf5e45b5)
+
